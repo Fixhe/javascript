@@ -1,6 +1,7 @@
-let username;;
+//  change conversion = change the datatype of a value to another
+//                      (string,numbe, booleans)
 
-document.getElementById("mySubmit").onclick = function(){
-    username = document.getElementById("inputText").value;
-    document.getElementById("name").textContent=`Name is ${username}`;
-}
+let age=window.prompt("How old are you ?")
+age=Number(age)
+age+=1
+console.log(age, typeof age)
