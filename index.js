@@ -1,19 +1,10 @@
-// Counter Program
-
- const decreasebt=document.getElementById("decreasebt");
- const resetbt=document.getElementById("resetbt")
- const increasebt=document.getElementById("increasebt")
- const countLabel=document.getElementById("countLabel");
- let count=0;
-increasebt.onclick=function(){
-    count++;
-    countLabel.textContent=count;
-}
-decreasebt.onclick=function(){
-    count--;
-    countLabel.textContent=count;
-}
-resetbt.onclick=function(){
-    count=0;
-    countLabel.textContent=count;
+//RAMDOMNUMBER GENERATOR
+const myButton = document.getElementById("myButton");
+const myLabel = document.getElementById("myLabel");
+const max=100;
+const min=50;
+let randomNum;
+myButton.onclick = function(){
+    randomNum = Math.floor(Math.random() *max)+min;
+    myLabel.textContent = randomNum;
 }
