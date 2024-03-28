@@ -1,21 +1,27 @@
-//if statement=if a condition is true, execute some code 
-//              if not, do something else
+//check = property that determines the checked state of an 
+//        HTML checkbox or radio button element
 
-const myInput=document.getElementById("myInput");
-const mySubmit=document.getElementById("mySubmit");
-const result=document.getElementById("result");
+const myCheckbox = document.getElementById("myCheckbox");
+const myVisaBtn = document.getElementById("myVisaBtn");
+const myMastercardBtn = document.getElementById("myMastercardBtn");
+const myPaypalBtn = document.getElementById("myPaypalBtn");
+const mySubmit = document.getElementById("mySubmit");
+const resultSubmit = document.getElementById("resultSubmit");
+const resultPayment = document.getElementById("resultPayment");
 
-let age;
-mySubmit.onclick=function(){
-    age=myInput.value;
-    if(age>100){
-        result.textContent=(`you are oldder`)
-    }if (age>=18) {
-        result.textContent=(`you can enter this site`)
-    }if(age<18){
-        result.textContent=(`you can't enter this site`)
-    }if(age==0){
-        result.textContent=(`you have had born yet`)
+mySubmit.onclick = function(){
+    if(myCheckbox.checked){
+        resultSubmit.textContent = `you are subscribed`;
+    }else{
+        resultSubmit.textContent = `you are not subscribed`;
     }
-
+    if(myVisaBtn.checked){
+        resultPayment.textContent = `you are paying with Visa`;
+    }else if(myMastercardBtn.checked){
+        resultPayment.textContent=`you are paying with mastercard`;
+    }else if(myPaypalBtn.checked){
+        resultPayment.textContent=`you are paying with Paypal`;
+    }else{
+        resultPayment.textContent=`you must select one all of payment`;
+    }
 }
