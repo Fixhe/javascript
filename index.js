@@ -1,16 +1,27 @@
-//Switch = can be an efficient replacement to many else if 
-//         statements;
+//String methods = allow you to mainpulate and work with text (strings)
 
-let testScore=40;
-let testGrade;
-switch(true){
-    case testScore>=50:
-        testGrade="pass";
-         break;
-    case testScore<50:
-        testGrade="fail";
-        break;
-    default:
-        testGrade="Absent";
+let userName = " Ravin";
+ 
+
+// console.log(userName.charAt(4))
+// console.log(userName.lastIndexOf("i"))
+
+// userName=userName.trim();
+// userName = userName.toUpperCase()
+// userName = userName.toLocaleLowerCase()
+// userName = userName.repeat(3)
+// console.log(userName);
+
+let results = userName.startsWith(" ")
+if(results){
+    console.log(`you can't begin with ' '`);
+}else{
+    console.log(userName)
 }
-console.log(`Result is ${testGrade}`);
+
+let phoneNumber="123-456-789"
+let result=phoneNumber.padStart(15,0);
+let result1=phoneNumber.padEnd(15,0);
+console.log(result)
+console.log(result1)
+
