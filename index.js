@@ -1,27 +1,29 @@
-//String methods = allow you to mainpulate and work with text (strings)
+//String slicing = creating a substring from a portion of anotther string
 
-let userName = " Ravin";
- 
+//                  string.slice(start, end)
 
-// console.log(userName.charAt(4))
-// console.log(userName.lastIndexOf("i"))
 
-// userName=userName.trim();
-// userName = userName.toUpperCase()
-// userName = userName.toLocaleLowerCase()
-// userName = userName.repeat(3)
-// console.log(userName);
+const fullName="Dre Ravin";
 
-let results = userName.startsWith(" ")
-if(results){
-    console.log(`you can't begin with ' '`);
-}else{
-    console.log(userName)
-}
+// let firstName=fullName.slice(0,3);
+// let lastName=fullName.slice(4,9);
 
-let phoneNumber="123-456-789"
-let result=phoneNumber.padStart(15,0);
-let result1=phoneNumber.padEnd(15,0);
-console.log(result)
-console.log(result1)
+// console.log(firstName);
+// console.log(lastName);
 
+// let firstChar=fullName.slice(0,1);
+// let lastChar=fullName.slice(-1);
+
+// console.log(firstChar);
+// console.log(lastChar);
+
+// let firstName=fullName.slice(0,fullName.indexOf(" "));
+// let lastName=fullName.slice(fullName.indexOf(" ")+1)
+// console.log(firstName);
+// console.log(lastName);
+
+const email="dre@gmail.com";
+let username=email.slice(0,email.indexOf("@"));
+let extension=email.slice(email.indexOf("@")+1);
+console.log(username);
+console.log(extension);
