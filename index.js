@@ -1,22 +1,14 @@
-//logical operators=used to combine or manipulate boolean values
-//                      (true or false)
-//                      AND =&&
-//                      OR  =||
-//                      NOT =!
-//-----------------------------------
-// let temp=window.prompt("Enter Temperatur")
-// let weather;
-// if(temp>0 && temp<=20){
-//     weather='the weather is good';
-// }else{
-//     weather='the weather is Bad'
-// }
-// console.log(weather);
-//----------------------------
+//Strict equality
+//     = assignment operator
+//    == comparison operator (compare if values are equal)
+//   === strict quality operator (compare if values & datatypes are equal )
+//    != inequality operator
+//   !== strict inequality operator
 
-const isSunny=false;
-if(!isSunny){
-    console.log("The sky is Cloud");
+
+const PI=3.14;
+if(PI !=="3.14"){
+    console.log("This is PI");
 }else{
-    console.log("The sky is Sunny");
+    console.log("This is not PI");
 }
