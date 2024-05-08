@@ -1,14 +1,16 @@
-//Strict equality
-//     = assignment operator
-//    == comparison operator (compare if values are equal)
-//   === strict quality operator (compare if values & datatypes are equal )
-//    != inequality operator
-//   !== strict inequality operator
+// while loop= repeat some code WHILE some condition is true
 
 
-const PI=3.14;
-if(PI !=="3.14"){
-    console.log("This is PI");
-}else{
-    console.log("This is not PI");
+let logIn=false;
+let username;
+let password;
+while(!logIn){
+    username=window.prompt(`input username`);
+    password=window.prompt(`input password`);
+    if(username==="Username" && password==="Password"){
+        logIn=true;
+        console.log("you login was sucessed");
+    }else{
+        console.log("Invalide credential");
+    }
 }
